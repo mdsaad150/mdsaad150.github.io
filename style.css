@@ -1,267 +1,186 @@
+/* ===================================
+   Md. Saad Portfolio v2.0
+   Part 1
+=================================== */
+
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-html{
     scroll-behavior:smooth;
 }
 
 body{
-    background:#0F172A;
-    color:white;
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#f8fafc;
+    line-height:1.7;
 }
 
-/* Navbar */
+/* ==========================
+   Navbar
+========================== */
 
 .navbar{
-    background:#111827 !important;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(12px);
+    transition:.3s;
+    padding:15px 0;
 }
 
 .navbar-brand{
-    font-size:28px;
+    font-size:26px;
     font-weight:700;
+    color:#3b82f6 !important;
 }
 
 .nav-link{
     color:white !important;
     margin-left:20px;
+    transition:.3s;
 }
 
 .nav-link:hover{
-    color:#3B82F6 !important;
-}
-
-/* Hero */
-
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    background:linear-gradient(135deg,#0F172A,#1E3A8A);
-
-}
-
-.profile-img{
-
-    width:220px;
-
-    height:220px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:6px solid white;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-
-}
-
-.hero h1{
-
-    font-size:58px;
-
-    font-weight:700;
-
-}
-
-.hero h4{
-
-    color:#60A5FA;
-
-    margin-top:10px;
-
-}
-
-.hero p{
-
-    max-width:700px;
-
-    margin:auto;
-
-    margin-top:20px;
-
-    color:#ddd;
-
-}
-
-.btn-primary{
-
-    background:#2563EB;
-
-    border:none;
-
-}
-
-.btn-primary:hover{
-
-    background:#1D4ED8;
-
-}
-
-.btn-outline-light:hover{
-
-    color:#111827;
-
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.hero h1{
-
-font-size:36px;
-
-}
-
-.hero h4{
-
-font-size:22px;
-
-}
-
-.profile-img{
-
-width:170px;
-
-height:170px;
-
-}
-
+    color:#60a5fa !important;
 }
 
 /* ==========================
-   About Section
+   Hero
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    padding:120px 20px 80px;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #3b82f6;
+    box-shadow:0 0 35px rgba(59,130,246,.45);
+    transition:.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+.hero h1{
+    margin-top:25px;
+    font-size:3.2rem;
+    font-weight:700;
+}
+
+.hero h4{
+    margin-top:15px;
+    color:#93c5fd;
+}
+
+.hero-text{
+    max-width:700px;
+    margin:25px auto;
+    font-size:1.15rem;
+    color:#d1d5db;
+}
+
+/* Buttons */
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-outline-light:hover{
+    color:#0f172a;
+}
+
+/* ==========================
+   General Section
+========================== */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    font-size:2.4rem;
+    font-weight:700;
+    color:#3b82f6;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   About
 ========================== */
 
 #about{
     background:#111827;
-    color:white;
-}
-
-#about h2{
-    color:#3B82F6;
-    font-weight:700;
 }
 
 #about p{
     color:#d1d5db;
-    line-height:1.8;
 }
 
-#about img{
+.about-photo{
+    width:320px;
+    max-width:100%;
     border-radius:20px;
-    border:5px solid #2563EB;
+    border:5px solid #2563eb;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
     transition:.4s;
 }
 
-#about img:hover{
-    transform:scale(1.03);
+.about-photo:hover{
+    transform:translateY(-8px);
 }
 
 /* ==========================
-   Career Highlights
+   Highlights
 ========================== */
 
-.card{
-    border:none;
+#highlights{
+    background:#0f172a;
+}
+
+.highlight-box{
+    background:#1e293b;
     border-radius:18px;
-    transition:.4s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 40px rgba(0,0,0,.4);
-}
-
-.card h1{
-    font-size:50px;
-    font-weight:700;
-}
-
-.card p{
-    margin-top:10px;
-    font-size:18px;
-}
-
-/* Section spacing */
-
-section{
-    padding-top:80px;
-    padding-bottom:80px;
-}
-/* ==========================
-   Experience Timeline
-========================== */
-
-.timeline{
-    position:relative;
-    max-width:900px;
-    margin:auto;
-}
-
-.timeline::before{
-    content:'';
-    position:absolute;
-    left:20px;
-    top:0;
-    width:3px;
-    height:100%;
-    background:#2563EB;
-}
-
-.timeline-item{
-    position:relative;
-    margin-left:60px;
-    margin-bottom:40px;
-    background:#1E293B;
     padding:25px;
-    border-radius:12px;
+    text-align:center;
     transition:.3s;
+    height:100%;
 }
 
-.timeline-item::before{
-    content:'';
-    position:absolute;
-    left:-50px;
-    top:25px;
-    width:18px;
-    height:18px;
-    background:#3B82F6;
-    border-radius:50%;
-    border:3px solid white;
+.highlight-box:hover{
+    transform:translateY(-10px);
+    background:#2563eb;
 }
 
-.timeline-item:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 25px rgba(0,0,0,.3);
+.highlight-box h3{
+    font-size:2rem;
+    font-weight:700;
+    color:#60a5fa;
 }
 
-.timeline-item h4{
-    color:#60A5FA;
+.highlight-box:hover h3{
+    color:white;
 }
 
-.timeline-item span{
-    font-size:14px;
-    color:#cbd5e1;
-}
-
-.timeline-item p{
+.highlight-box p{
     margin-top:10px;
-    color:#d1d5db;
+    color:#e2e8f0;
 }
