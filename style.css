@@ -144,3 +144,64 @@ height:170px;
 }
 
 }
+
+/* ==========================
+   About Section
+========================== */
+
+#about{
+    background:#111827;
+    color:white;
+}
+
+#about h2{
+    color:#3B82F6;
+    font-weight:700;
+}
+
+#about p{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+#about img{
+    border-radius:20px;
+    border:5px solid #2563EB;
+    transition:.4s;
+}
+
+#about img:hover{
+    transform:scale(1.03);
+}
+
+/* ==========================
+   Career Highlights
+========================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.card h1{
+    font-size:50px;
+    font-weight:700;
+}
+
+.card p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Section spacing */
+
+section{
+    padding-top:80px;
+    padding-bottom:80px;
+}
