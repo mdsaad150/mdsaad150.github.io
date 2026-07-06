@@ -1,1 +1,146 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0F172A;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#111827 !important;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+}
+
+.nav-link:hover{
+    color:#3B82F6 !important;
+}
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+
+}
+
+.profile-img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    font-weight:700;
+
+}
+
+.hero h4{
+
+    color:#60A5FA;
+
+    margin-top:10px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-top:20px;
+
+    color:#ddd;
+
+}
+
+.btn-primary{
+
+    background:#2563EB;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#1D4ED8;
+
+}
+
+.btn-outline-light:hover{
+
+    color:#111827;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero h4{
+
+font-size:22px;
+
+}
+
+.profile-img{
+
+width:170px;
+
+height:170px;
+
+}
+
+}
